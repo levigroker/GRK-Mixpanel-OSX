@@ -1,10 +1,6 @@
 #import <Foundation/Foundation.h>
 
-#if TARGET_OS_IPHONE
-#import <UIKit/UIKit.h>
-#else
 #import <Cocoa/Cocoa.h>
-#endif
 
 @class    MixpanelPeople;
 @protocol MixpanelDelegate;
@@ -38,6 +34,8 @@
  Library Guide</a>.
  */
 @interface Mixpanel : NSObject
+
+#pragma mark Properties
 
 /*!
  @property
@@ -133,6 +131,8 @@
  below for more information.
  */
 @property (atomic, weak) id<MixpanelDelegate> delegate; // allows fine grain control over uploading (optional)
+
+#pragma mark Tracking
 
 /*!
  @method
@@ -251,7 +251,8 @@
  Property keys must be <code>NSString</code> objects and values must be
  <code>NSString</code>, <code>NSNumber</code>, <code>NSNull</code>,
  <code>NSArray</code>, <code>NSDictionary</code>, <code>NSDate</code> or
- <code>NSURL</code> objects.
+ <code>NSURL</code> objects. If the event is being timed, the timer will
+ stop and be added as a property.
 
  @param event           event name
  @param properties      properties dictionary
@@ -351,6 +352,45 @@
  @method
 
  @abstract
+ Starts a timer that will be stopped and added as a property when a
+ corresponding event is tracked.
+
+ @discussion
+ This method is intended to be used in advance of events that have
+ a duration. For example, if a developer were to track an "Image Upload" event
+ she might want to also know how long the upload took. Calling this method
+ before the upload code would implicitly cause the <code>track</code>
+ call to record its duration.
+
+ <pre>
+ // begin timing the image upload
+ [mixpanel timeEvent:@"Image Upload"];
+
+ // upload the image
+ [self uploadImageWithSuccessHandler:^{
+
+    // track the event
+    [mixpanel track:@"Image Upload"];
+ }];
+ </pre>
+
+ @param event   a string, identical to the name of the event that will be tracked
+
+ */
+- (void)timeEvent:(NSString *)event;
+
+/*!
+ @method
+
+ @abstract
+ Clears all current event timers.
+ */
+- (void)clearTimedEvents;
+
+/*!
+ @method
+
+ @abstract
  Clears all stored properties and distinct IDs. Useful if your app's user logs out.
  */
 - (void)reset;
@@ -385,9 +425,9 @@
  */
 - (void)archive;
 
-
-
 - (void)createAlias:(NSString *)alias forDistinctID:(NSString *)distinctID;
+
+- (NSString *)libVersion;
 
 @end
 
@@ -409,12 +449,11 @@
  </pre>
 
  Please note that the core <code>Mixpanel</code> and
- <code>MixpanelPeople</code> classes have separate <code>identify:<code>
- methods. The <code>Mixpanel</code> <code>identify:</code> affects the
+ <code>MixpanelPeople</code> classes share the <code>identify:<code> method.
+ The <code>Mixpanel</code> <code>identify:</code> affects the
  <code>distinct_id</code> property of events sent by <code>track:</code> and
- <code>track:properties:</code>. The <code>MixpanelPeople</code>
- <code>identify:</code> determines which Mixpanel People user record will be
- updated by <code>set:</code>, <code>increment:</code> and other
+ <code>track:properties:</code> and determines which Mixpanel People user
+ record will be updated by <code>set:</code>, <code>increment:</code> and other
  <code>MixpanelPeople</code> methods.
 
  <b>If you are going to set your own distinct IDs for core Mixpanel event

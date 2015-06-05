@@ -10,8 +10,13 @@
 		DB394AB91B2221B100B4FBFA /* Mixpanel_OSX_Library.h in Headers */ = {isa = PBXBuildFile; fileRef = DB394AB81B2221B100B4FBFA /* Mixpanel_OSX_Library.h */; };
 		DB394ABB1B2221B100B4FBFA /* Mixpanel_OSX_Library.m in Sources */ = {isa = PBXBuildFile; fileRef = DB394ABA1B2221B100B4FBFA /* Mixpanel_OSX_Library.m */; };
 		DB394AC11B2221B100B4FBFA /* libMixpanel-OSX-Library.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB394AB51B2221B100B4FBFA /* libMixpanel-OSX-Library.a */; };
-		DB394AD81B2221CD00B4FBFA /* Mixpanel.h in Headers */ = {isa = PBXBuildFile; fileRef = DB394AD41B2221CD00B4FBFA /* Mixpanel.h */; };
-		DB394AD91B2221CD00B4FBFA /* Mixpanel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB394AD51B2221CD00B4FBFA /* Mixpanel.m */; };
+		DB394AEC1B22247300B4FBFA /* Mixpanel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB394AE31B22247300B4FBFA /* Mixpanel.m */; };
+		DB394AF21B22247300B4FBFA /* NSData+MPBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = DB394AE91B22247300B4FBFA /* NSData+MPBase64.h */; };
+		DB394AFD1B22249E00B4FBFA /* Mixpanel.h in Headers */ = {isa = PBXBuildFile; fileRef = DB394AF41B22249E00B4FBFA /* Mixpanel.h */; };
+		DB394AFE1B22249E00B4FBFA /* Mixpanel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB394AF51B22249E00B4FBFA /* Mixpanel.m */; };
+		DB394B031B22249E00B4FBFA /* MPLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = DB394AFA1B22249E00B4FBFA /* MPLogger.h */; };
+		DB394B041B22249E00B4FBFA /* NSData+MPBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = DB394AFB1B22249E00B4FBFA /* NSData+MPBase64.h */; };
+		DB394B051B22249E00B4FBFA /* NSData+MPBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = DB394AFC1B22249E00B4FBFA /* NSData+MPBase64.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,8 +35,13 @@
 		DB394ABA1B2221B100B4FBFA /* Mixpanel_OSX_Library.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mixpanel_OSX_Library.m; sourceTree = "<group>"; };
 		DB394AC01B2221B100B4FBFA /* Mixpanel-OSX-LibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mixpanel-OSX-LibraryTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB394AC61B2221B100B4FBFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DB394AD41B2221CD00B4FBFA /* Mixpanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mixpanel.h; sourceTree = "<group>"; };
-		DB394AD51B2221CD00B4FBFA /* Mixpanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mixpanel.m; sourceTree = "<group>"; };
+		DB394AE31B22247300B4FBFA /* Mixpanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mixpanel.m; sourceTree = "<group>"; };
+		DB394AE91B22247300B4FBFA /* NSData+MPBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MPBase64.h"; sourceTree = "<group>"; };
+		DB394AF41B22249E00B4FBFA /* Mixpanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mixpanel.h; sourceTree = "<group>"; };
+		DB394AF51B22249E00B4FBFA /* Mixpanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mixpanel.m; sourceTree = "<group>"; };
+		DB394AFA1B22249E00B4FBFA /* MPLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPLogger.h; sourceTree = "<group>"; };
+		DB394AFB1B22249E00B4FBFA /* NSData+MPBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MPBase64.h"; sourceTree = "<group>"; };
+		DB394AFC1B22249E00B4FBFA /* NSData+MPBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MPBase64.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +110,11 @@
 		DB394ACF1B2221CD00B4FBFA /* Mixpanel */ = {
 			isa = PBXGroup;
 			children = (
-				DB394AD41B2221CD00B4FBFA /* Mixpanel.h */,
-				DB394AD51B2221CD00B4FBFA /* Mixpanel.m */,
+				DB394AF41B22249E00B4FBFA /* Mixpanel.h */,
+				DB394AF51B22249E00B4FBFA /* Mixpanel.m */,
+				DB394AFA1B22249E00B4FBFA /* MPLogger.h */,
+				DB394AFB1B22249E00B4FBFA /* NSData+MPBase64.h */,
+				DB394AFC1B22249E00B4FBFA /* NSData+MPBase64.m */,
 			);
 			name = Mixpanel;
 			path = ../Mixpanel;
@@ -114,8 +127,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB394AD81B2221CD00B4FBFA /* Mixpanel.h in Headers */,
+				DB394AFD1B22249E00B4FBFA /* Mixpanel.h in Headers */,
 				DB394AB91B2221B100B4FBFA /* Mixpanel_OSX_Library.h in Headers */,
+				DB394B031B22249E00B4FBFA /* MPLogger.h in Headers */,
+				DB394AF21B22247300B4FBFA /* NSData+MPBase64.h in Headers */,
+				DB394B041B22249E00B4FBFA /* NSData+MPBase64.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,8 +223,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB394AD91B2221CD00B4FBFA /* Mixpanel.m in Sources */,
+				DB394B051B22249E00B4FBFA /* NSData+MPBase64.m in Sources */,
 				DB394ABB1B2221B100B4FBFA /* Mixpanel_OSX_Library.m in Sources */,
+				DB394AFE1B22249E00B4FBFA /* Mixpanel.m in Sources */,
+				DB394AEC1B22247300B4FBFA /* Mixpanel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
