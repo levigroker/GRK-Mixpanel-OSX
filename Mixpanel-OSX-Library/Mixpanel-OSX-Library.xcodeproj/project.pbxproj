@@ -1,0 +1,391 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB394AB91B2221B100B4FBFA /* Mixpanel_OSX_Library.h in Headers */ = {isa = PBXBuildFile; fileRef = DB394AB81B2221B100B4FBFA /* Mixpanel_OSX_Library.h */; };
+		DB394ABB1B2221B100B4FBFA /* Mixpanel_OSX_Library.m in Sources */ = {isa = PBXBuildFile; fileRef = DB394ABA1B2221B100B4FBFA /* Mixpanel_OSX_Library.m */; };
+		DB394AC11B2221B100B4FBFA /* libMixpanel-OSX-Library.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB394AB51B2221B100B4FBFA /* libMixpanel-OSX-Library.a */; };
+		DB394AD81B2221CD00B4FBFA /* Mixpanel.h in Headers */ = {isa = PBXBuildFile; fileRef = DB394AD41B2221CD00B4FBFA /* Mixpanel.h */; };
+		DB394AD91B2221CD00B4FBFA /* Mixpanel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB394AD51B2221CD00B4FBFA /* Mixpanel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DB394AC21B2221B100B4FBFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB394AAD1B2221B100B4FBFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB394AB41B2221B100B4FBFA;
+			remoteInfo = "Mixpanel-OSX-Library";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DB394AB51B2221B100B4FBFA /* libMixpanel-OSX-Library.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libMixpanel-OSX-Library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB394AB81B2221B100B4FBFA /* Mixpanel_OSX_Library.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mixpanel_OSX_Library.h; sourceTree = "<group>"; };
+		DB394ABA1B2221B100B4FBFA /* Mixpanel_OSX_Library.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mixpanel_OSX_Library.m; sourceTree = "<group>"; };
+		DB394AC01B2221B100B4FBFA /* Mixpanel-OSX-LibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mixpanel-OSX-LibraryTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB394AC61B2221B100B4FBFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB394AD41B2221CD00B4FBFA /* Mixpanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mixpanel.h; sourceTree = "<group>"; };
+		DB394AD51B2221CD00B4FBFA /* Mixpanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mixpanel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB394AB21B2221B100B4FBFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB394ABD1B2221B100B4FBFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB394AC11B2221B100B4FBFA /* libMixpanel-OSX-Library.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB394AAC1B2221B100B4FBFA = {
+			isa = PBXGroup;
+			children = (
+				DB394ACF1B2221CD00B4FBFA /* Mixpanel */,
+				DB394AB71B2221B100B4FBFA /* Mixpanel-OSX-Library */,
+				DB394AC41B2221B100B4FBFA /* Mixpanel-OSX-LibraryTests */,
+				DB394AB61B2221B100B4FBFA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB394AB61B2221B100B4FBFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB394AB51B2221B100B4FBFA /* libMixpanel-OSX-Library.a */,
+				DB394AC01B2221B100B4FBFA /* Mixpanel-OSX-LibraryTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB394AB71B2221B100B4FBFA /* Mixpanel-OSX-Library */ = {
+			isa = PBXGroup;
+			children = (
+				DB394AB81B2221B100B4FBFA /* Mixpanel_OSX_Library.h */,
+				DB394ABA1B2221B100B4FBFA /* Mixpanel_OSX_Library.m */,
+			);
+			path = "Mixpanel-OSX-Library";
+			sourceTree = "<group>";
+		};
+		DB394AC41B2221B100B4FBFA /* Mixpanel-OSX-LibraryTests */ = {
+			isa = PBXGroup;
+			children = (
+				DB394AC51B2221B100B4FBFA /* Supporting Files */,
+			);
+			path = "Mixpanel-OSX-LibraryTests";
+			sourceTree = "<group>";
+		};
+		DB394AC51B2221B100B4FBFA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB394AC61B2221B100B4FBFA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DB394ACF1B2221CD00B4FBFA /* Mixpanel */ = {
+			isa = PBXGroup;
+			children = (
+				DB394AD41B2221CD00B4FBFA /* Mixpanel.h */,
+				DB394AD51B2221CD00B4FBFA /* Mixpanel.m */,
+			);
+			name = Mixpanel;
+			path = ../Mixpanel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DB394AB31B2221B100B4FBFA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB394AD81B2221CD00B4FBFA /* Mixpanel.h in Headers */,
+				DB394AB91B2221B100B4FBFA /* Mixpanel_OSX_Library.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		DB394AB41B2221B100B4FBFA /* Mixpanel-OSX-Library */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB394AC91B2221B100B4FBFA /* Build configuration list for PBXNativeTarget "Mixpanel-OSX-Library" */;
+			buildPhases = (
+				DB394AB11B2221B100B4FBFA /* Sources */,
+				DB394AB21B2221B100B4FBFA /* Frameworks */,
+				DB394AB31B2221B100B4FBFA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mixpanel-OSX-Library";
+			productName = "Mixpanel-OSX-Library";
+			productReference = DB394AB51B2221B100B4FBFA /* libMixpanel-OSX-Library.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DB394ABF1B2221B100B4FBFA /* Mixpanel-OSX-LibraryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB394ACC1B2221B100B4FBFA /* Build configuration list for PBXNativeTarget "Mixpanel-OSX-LibraryTests" */;
+			buildPhases = (
+				DB394ABC1B2221B100B4FBFA /* Sources */,
+				DB394ABD1B2221B100B4FBFA /* Frameworks */,
+				DB394ABE1B2221B100B4FBFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB394AC31B2221B100B4FBFA /* PBXTargetDependency */,
+			);
+			name = "Mixpanel-OSX-LibraryTests";
+			productName = "Mixpanel-OSX-LibraryTests";
+			productReference = DB394AC01B2221B100B4FBFA /* Mixpanel-OSX-LibraryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB394AAD1B2221B100B4FBFA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Levi Brown";
+				TargetAttributes = {
+					DB394AB41B2221B100B4FBFA = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					DB394ABF1B2221B100B4FBFA = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+				};
+			};
+			buildConfigurationList = DB394AB01B2221B100B4FBFA /* Build configuration list for PBXProject "Mixpanel-OSX-Library" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DB394AAC1B2221B100B4FBFA;
+			productRefGroup = DB394AB61B2221B100B4FBFA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB394AB41B2221B100B4FBFA /* Mixpanel-OSX-Library */,
+				DB394ABF1B2221B100B4FBFA /* Mixpanel-OSX-LibraryTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB394ABE1B2221B100B4FBFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB394AB11B2221B100B4FBFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB394AD91B2221CD00B4FBFA /* Mixpanel.m in Sources */,
+				DB394ABB1B2221B100B4FBFA /* Mixpanel_OSX_Library.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB394ABC1B2221B100B4FBFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB394AC31B2221B100B4FBFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB394AB41B2221B100B4FBFA /* Mixpanel-OSX-Library */;
+			targetProxy = DB394AC21B2221B100B4FBFA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DB394AC71B2221B100B4FBFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DB394AC81B2221B100B4FBFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DB394ACA1B2221B100B4FBFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DB394ACB1B2221B100B4FBFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DB394ACD1B2221B100B4FBFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Mixpanel-OSX-LibraryTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DB394ACE1B2221B100B4FBFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Mixpanel-OSX-LibraryTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB394AB01B2221B100B4FBFA /* Build configuration list for PBXProject "Mixpanel-OSX-Library" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB394AC71B2221B100B4FBFA /* Debug */,
+				DB394AC81B2221B100B4FBFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB394AC91B2221B100B4FBFA /* Build configuration list for PBXNativeTarget "Mixpanel-OSX-Library" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB394ACA1B2221B100B4FBFA /* Debug */,
+				DB394ACB1B2221B100B4FBFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB394ACC1B2221B100B4FBFA /* Build configuration list for PBXNativeTarget "Mixpanel-OSX-LibraryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB394ACD1B2221B100B4FBFA /* Debug */,
+				DB394ACE1B2221B100B4FBFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB394AAD1B2221B100B4FBFA /* Project object */;
+}
