@@ -1,3 +1,9 @@
+This is a fork of [https://github.com/orta/mixpanel-osx-unofficial](https://github.com/orta/mixpanel-osx-unofficial) but has been heavily modified to be Mac specific and updated with more recent changes from the Mixpanel iOS SDK.
+
+-Levi
+
+---
+
 # Using Mixpanel Analytics on OS X #
 
 `pod "Mixpanel-OSX-Community", :git => "https://github.com/orta/mixpanel-osx-unofficial.git"`
