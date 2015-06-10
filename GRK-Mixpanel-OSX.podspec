@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.author       =  { 'Mixpanel' => 'support@mixpanel.com', "levigroker" => "levigroker@gmail.com" }
   s.source       =  { :git => 'https://github.com/levigroker/GRK-Mixpanel-OSX.git', :tag => s.version.to_s }
   s.frameworks = 'Cocoa', 'Foundation', 'SystemConfiguration'
-  s.platform     =  :osx
+  s.platform     =  :osx, '10.9'
   s.source_files =  'Mixpanel/**/*.{h,m}'
   s.requires_arc = true
 end
